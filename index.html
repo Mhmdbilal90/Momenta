@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personality Test</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Personality Test</h1>
+    <form id="personalityTest">
+      <div class="question">
+        <p>1. How do you feel about large social gatherings?</p>
+        <label><input type="radio" name="q1" value="1"> I enjoy them and feel energized.</label>
+        <label><input type="radio" name="q1" value="0"> I find them draining and prefer smaller groups.</label>
+      </div>
+      <div class="question">
+        <p>2. When you need to recharge, what do you do?</p>
+        <label><input type="radio" name="q2" value="0"> Spend time alone or with a close friend.</label>
+        <label><input type="radio" name="q2" value="1"> Go out and socialize with others.</label>
+      </div>
+      <div class="question">
+        <p>3. How do you prefer to communicate?</p>
+        <label><input type="radio" name="q3" value="0"> Through text or email.</label>
+        <label><input type="radio" name="q3" value="1"> In person or over the phone.</label>
+      </div>
+      <button type="button" onclick="calculateResult()">Submit</button>
+    </form>
+    <div id="result" class="hidden">
+      <h2>Your Result</h2>
+      <p id="resultText"></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
